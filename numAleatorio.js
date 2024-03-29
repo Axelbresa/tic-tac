@@ -25,11 +25,14 @@ function comparar() {
     let num_menor = document.getElementById("numero_cercano_menor");
     let num_mayor = document.getElementById("numero_cercano_mayor");
 
+    
     if (isNaN(numeroEscogido) || numeroEscogido === '') {
         resultadoLabel.textContent = "Debes elegir un número válido";
-    } else {
+    } else if (isNaN(numRandom) || numRandom === ''){
+        resultadoLabel.textContent = "Debes Generar un numero aleatorio";
+    }else {
         numeroEscogido = parseInt(numeroEscogido); // Convertir a número entero
-
+        
         if (numRandom > numeroEscogido) {
             resultadoLabel.textContent = "El número aleatorio es mayor";
             num_menor.textContent = "Número cercano menor: " + numeroEscogido;
