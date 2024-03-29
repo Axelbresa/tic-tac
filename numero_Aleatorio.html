@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Adivina el número</h1>
+    <label id="contenido_numero" style="display: none;"></label>
+    <input id="numero_escogido" type="number" placeholder="Ingresa tu número">
+    <button id="comparar_numero" onclick="comparar()">Comparar número</button>
+    <button id="generar_numero">Generar número aleatorio</button>
+    <label id="resultado"></label>
+    <p>Numero cercano mayor:</p>
+    <label id="numero_cercano_mayor"></label>
+    <p>Numero cercano menor:</p>
+    <label id="numero_cercano_menor"></label>
+
+   <script src="numAleatorio.js"></script>
+</body>
+</html>
